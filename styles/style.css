@@ -1,0 +1,62 @@
+@import url("");
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--violet);
+    background-image: url("../images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    padding: 30px;
+
+    font-size: 16px;
+}
+
+header {
+    width: 40%;
+}
+
+header img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.container {
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.hero {
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.content {
+    padding: 10px;
+    margin-top: 2rem;
+    line-height: 1.4;
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 {
+    margin-bottom: 0.9rem;
+    font-size: 1.5rem;
+}
+
+.content p {
+    opacity: 0.7;
+    margin-bottom: 1.5rem;
+}
