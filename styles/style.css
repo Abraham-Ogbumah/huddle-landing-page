@@ -16,23 +16,27 @@ body {
     background-color: var(--violet);
     background-image: url("../images/bg-mobile.svg");
     background-repeat: no-repeat;
-    padding: 30px;
-
+    padding: 1rem;
     font-size: 16px;
+}
+
+.outer-container {
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    margin: 1rem auto 1.5rem;
 }
 
 header {
     width: 40%;
+    margin-bottom: 3rem;
 }
 
 header img {
     width: 100%;
     max-width: 200px;
-}
-
-.container {
-    width: 100%;
-    margin-top: 4rem;
 }
 
 .hero {
@@ -44,8 +48,9 @@ header img {
 }
 
 .content {
-    padding: 10px;
-    margin-top: 2rem;
+    width: 90%;
+    margin: 2rem auto 1rem;
+    padding: 10px 1.7rem;
     line-height: 1.4;
     text-align: center;
     color: #fff;
@@ -60,3 +65,45 @@ header img {
     opacity: 0.7;
     margin-bottom: 1.5rem;
 }
+
+.button {
+    width: 70%;
+    padding: 0.3rem 0.2rem;
+    background-color: #fff;
+    border-radius: 4rem;
+    color: var(--violet);
+    margin: 0 auto 2rem;
+    box-shadow:  1px 2px 2px #000;
+}
+
+.register {
+    margin: 5px !important;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.socials {
+    display: flex;
+    width: 45%;
+    max-width: 160px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-icon {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 0px 4px;
+}
+
+ion-icon {
+    position: absolute;
+    top: 20%;
+    left: 23%;
+    font-size: 1rem;
+    color: #fff;
+  }
