@@ -134,6 +134,36 @@ footer {
     }
 }
 
+@media (min-width: 720px) {
+    .outer-container {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto 1fr auto auto;
+        gap: 1rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-column: 1 / span 12;
+    }
+
+    .container {
+        grid-column: 1 / span 12;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .socials {
+        grid-column: 1 / span 12;
+    }
+
+    footer {
+        grid-column: 1 / span 12;
+    }
+}
+
 /* @media screen and (min-width: 991px) {
     .outer-container {
         display: grid;
