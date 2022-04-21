@@ -16,12 +16,13 @@ body {
     background-color: var(--violet);
     background-image: url("../images/bg-mobile.svg");
     background-repeat: no-repeat;
-    padding: 1rem;
+    height: 100vh;
     font-size: 16px;
 }
 
 .outer-container {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .container {
@@ -30,8 +31,10 @@ body {
 }
 
 header {
-    width: 40%;
-    margin-bottom: 3rem;
+    padding-top: 1.4rem;
+    padding-bottom: 2rem;
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 header img {
@@ -41,6 +44,7 @@ header img {
 
 .hero {
     width: 100%;
+    margin-bottom: 0.8rem;
 }
 
 .hero img {
@@ -48,9 +52,8 @@ header img {
 }
 
 .content {
-    width: 90%;
-    margin: 2rem auto 1rem;
-    padding: 10px 1.7rem;
+    width: 100%;
+    margin: 1rem auto 2rem;
     line-height: 1.4;
     text-align: center;
     color: #fff;
@@ -72,7 +75,7 @@ header img {
     background-color: #fff;
     border-radius: 4rem;
     color: var(--violet);
-    margin: 0 auto 2rem;
+    margin: 0 auto 1rem;
     box-shadow:  1px 2px 2px #000;
 }
 
@@ -107,3 +110,19 @@ ion-icon {
     font-size: 1rem;
     color: #fff;
   }
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: #fff;
+}
+
+.attribution a {
+    color: #fff;
+}
+
+@media screen and (min-width: 380px) {
+    body {
+        background-image: url("../images/illustration-mockups.svg");
+    }
+}
