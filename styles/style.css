@@ -21,20 +21,22 @@ body {
 }
 
 .outer-container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto auto;
+    gap: 1rem;
     width: 90%;
     margin: 0 auto;
 }
 
 .container {
     width: 90%;
-    margin: 1rem auto 1.5rem;
+    margin: 1rem auto;
 }
 
 header {
-    padding-top: 1.4rem;
-    padding-bottom: 2rem;
-    margin-bottom: 10px;
-    margin-top: 5px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 header img {
@@ -53,7 +55,7 @@ header img {
 
 .content {
     width: 100%;
-    margin: 1rem auto 2rem;
+    margin: 1rem auto;
     line-height: 1.4;
     text-align: center;
     color: #fff;
@@ -111,6 +113,11 @@ ion-icon {
     color: #fff;
   }
 
+footer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -123,6 +130,37 @@ ion-icon {
 
 @media screen and (min-width: 380px) {
     body {
-        background-image: url("../images/illustration-mockups.svg");
+        background-image: url("../images/bg-desktop.svg");
     }
 }
+
+/* @media screen and (min-width: 991px) {
+    .outer-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 50px 1fr 40px 10px;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "socials socials"
+        "footnote footnote";
+        grid-gap: 2rem;
+
+        width: 100%;
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    .container {
+        grid-area: main;
+        display: flex;
+    }
+
+    .socials {
+        grid-area: socials;
+    }
+
+
+} */
