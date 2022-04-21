@@ -81,6 +81,13 @@ header img {
     box-shadow:  1px 2px 2px #000;
 }
 
+.button:hover {
+    background-color: var(--soft-magenta);
+    color: #fff;
+
+    cursor: pointer;
+}
+
 .register {
     margin: 5px !important;
     font-size: 0.8rem;
@@ -111,7 +118,15 @@ ion-icon {
     left: 23%;
     font-size: 1rem;
     color: #fff;
-  }
+}
+
+ion-icon:hover {
+    color: var(--soft-magenta)
+}
+
+.link:hover {
+    border-color: var(--soft-magenta);
+}
 
 footer {
     margin-top: 10px;
