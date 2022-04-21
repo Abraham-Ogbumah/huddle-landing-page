@@ -146,6 +146,8 @@ footer {
 @media (min-width: 380px) {
     body {
         background-image: url("../images/bg-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
